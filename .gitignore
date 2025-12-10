@@ -36,6 +36,9 @@ ENV/
 # Data directory (dataset will be downloaded)
 data/
 
+# Output directory (generated plots and visualizations)
+output/
+
 # OS
 .DS_Store
 Thumbs.db
