@@ -266,7 +266,7 @@ def main() -> None:
         
         # Find amount and category columns
         amount_col = analyzer._find_amount_column() or (numeric_cols[0] if numeric_cols else None)
-        category_col = categorical_cols[0] if categorical_cols else None
+        category_col = "Category" if "Category" in cleaned_df.columns else (categorical_cols[0] if categorical_cols else None)
         
         if amount_col:
             # Get spending by category
